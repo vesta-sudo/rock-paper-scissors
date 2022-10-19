@@ -1,38 +1,56 @@
-input.onButtonPressed(Button.A, function () {
-    Hand = randint(1, 3)
-    if (Hand == 3) {
+input.onButtonPressed(Button.AB, function () {
+    Dice = randint(1, 6)
+    if (Dice == 1) {
         basic.showLeds(`
-            . . # . .
-            . # # # .
-            # # # # #
-            . # # # .
-            . . # . .
+            # . . . .
+            # . . . .
+            # . . . .
+            # . . . .
+            # . . . .
             `)
     }
-    if (Hand == 2) {
+    if (Dice == 2) {
         basic.showLeds(`
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
+            # # . . .
+            # # . . .
+            # # . . .
+            # # . . .
+            # # . . .
             `)
     }
-    if (Hand == 1) {
+    if (Dice == 3) {
         basic.showLeds(`
-            # # . . #
-            # # . # .
-            . . # . .
-            # # . # .
-            # # . . #
+            # # # . .
+            # # # . .
+            # # # . .
+            # # # . .
+            # # # . .
+            `)
+    }
+    if (Dice == 4) {
+        basic.showLeds(`
+            # # # # .
+            # # # # .
+            # # # # .
+            # # # # .
+            # # # # .
+            `)
+    }
+    if (Dice == 5) {
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
             `)
     }
 })
-let Hand = 0
+let Dice = 0
 basic.showLeds(`
-    # . # . #
-    . # . # .
-    # . # . #
-    . # . # .
-    # . # . #
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
     `)
