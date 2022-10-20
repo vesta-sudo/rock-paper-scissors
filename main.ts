@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.AB, function () {
-    Dice = randint(1, 6)
+    Dice = randint(1, 5)
     if (Dice == 1) {
         basic.showLeds(`
             # . . . .
